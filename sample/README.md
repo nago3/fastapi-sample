@@ -19,3 +19,15 @@ $ pip install alembic SQLAlchemy
 ```sh
 $ alembic init migrations
 ```
+
+### Create a new database
+
+```sh
+$ alembic revision --autogenerate -m "create todo table"
+```
+
+### Upgrade the database
+
+```sh
+$ alembic upgrade head
+```
